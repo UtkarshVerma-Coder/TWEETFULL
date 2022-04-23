@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwtrEdit</title>
+    <link rel="stylesheet" href="tetr.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,900&display=swap" rel="stylesheet">
+<!-- FONTS -->
+</head>
+<body>
+<center>
+        <div class="box">
+
+            <!-- User Profile -->
+            <div id="display-image"></div>
+            
+            
+            <!-- Twitter Logo -->
+            <img class="logo"  src="logo.png" alt="">
+            <!-- NAME -->
+            <input class="user" placeholder="Elon Musk" type="text"> <br>
+            <!-- USERNAME -->
+            <input id="username" class="user" placeholder="@ElonMusk" type="text">
+
+            <!-- MAIN -->
+            <br>
+            <br>
+            <br>
+            <br>
+            <textarea placeholder="Buy BitCoin NOW!" class="tweet" cols="30" rows="10"></textarea>
+
+
+          </div>
+          </div>
+        </center>
+
+<center>
+
+  <button class="choosepicture">
+    <input  type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+    CHANGE PROFILE
+    
+  </button>
+</center>
+        
+        
+        <script>
+          const image_input = document.querySelector("#image-input");
+          image_input.addEventListener("change", function() {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    const uploaded_image = reader.result;
+    document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+  });
+  reader.readAsDataURL(this.files[0]);
+});
+</script>
+
+
+
+
+
+
+</body>
+</html>

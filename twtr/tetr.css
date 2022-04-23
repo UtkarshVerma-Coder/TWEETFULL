@@ -1,0 +1,119 @@
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url(bg2.png);
+}
+
+
+.box{
+  font-family: 'Times New Roman', Times, serif;
+  height: 180px;
+  width: 350px;
+  resize: both;
+  overflow: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 1px 1px 100px 1px rgb(255, 0, 0);
+}
+
+
+
+
+.logo{
+  height: 45px;
+  position: relative;
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+/* profile */
+
+#display-image{
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+
+/* user */
+.user{
+  background-color: transparent;
+  border-width: 0ch;
+  margin-top: 30px;
+  float: left;
+  margin-left: 10px;
+  color: black;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+
+}
+.user::placeholder{
+  color: black;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* username */
+
+#username{
+  margin-left: -159px;
+  color: gray;
+}
+#username::placeholder{
+  color: grey;
+  font-weight: 300;
+}
+
+/* main tweet */
+
+.tweet{
+  background-color: transparent;
+  width: 300px;  
+  height: 70px;
+  margin-top: -15px;  
+  border-width: 0ch;
+  color: black;
+  font-weight: 600;
+}
+.tweet::placeholder{
+  font-weight: 600;
+  color: black;
+
+}
+
+
+
+
+/* FUNCTION BUTTON */
+/* CHOOSE PROFILE */
+.choosepicture{
+  margin-top: 100px;
+  width: 150PX;
+  height: 50px;
+  border-radius: 12PX;
+  padding-top: 3px;
+  border-width: 0ch;
+  color: white;
+  background-color: black;
+  box-shadow: 1px 1px 200px 1px whitesmoke;
+}
+.choosepicture input{
+  opacity: 0;
+  position: absolute;
+}
