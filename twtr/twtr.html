@@ -14,7 +14,15 @@
 </head>
 <body>
 <center>
-        <div class="box">
+
+
+<!-- big box -->
+<div class="bigbox">
+
+
+
+
+        <div id="blackbox" class="box">
 
             <!-- User Profile -->
             <div id="display-image"></div>
@@ -23,7 +31,8 @@
             <!-- Twitter Logo -->
             <img class="logo"  src="logo.png" alt="">
             <!-- NAME -->
-            <input class="user" placeholder="Elon Musk" type="text"> <br>
+            <input id="nameofus" class="user" placeholder="Elon Musk" type="text">
+            <img class="tick" height="20px" src="tick.png" alt=""> <br>
             <!-- USERNAME -->
             <input id="username" class="user" placeholder="@ElonMusk" type="text">
 
@@ -33,10 +42,53 @@
             <br>
             <br>
             <textarea placeholder="Buy BitCoin NOW!" class="tweet" cols="30" rows="10"></textarea>
+<!-- TIME AND DATE -->
 
+</div>
+<!-- TIME AND DATE -->
 
           </div>
           </div>
+</div>
+
+
+<div class="editing">
+  <div>
+
+    <label> BACKDROP</label> <br>
+    <br>
+    
+    <img onclick="cng()"  src="bg.png" alt="">
+    <img  src="bg1.jpg" alt="">
+    <img  src="bg3.png" alt="">
+    <img  src="bg2.png" alt="">
+  </div>
+    <div> <br>
+      <label for="">THEME</label> <br>  <br>
+      <button onclick="LIGHTTHEME()"> LIGHT</button> 
+      <button onclick="DARKTHEME()">DARK</button>
+      
+    </div>
+
+
+    <script>
+function LIGHTTHEME(){
+  var box = document.getElementById("blackbox")
+  box.style.backgroundColor = "white";
+  var usname = document.getElementById("username")
+  usname.style.color = "black";
+  var upname = document.getElementById("nameofus")
+  upname.style.color = "black";
+  upname.innerText("h")
+}
+function DARKTHEME(){
+  var box = document.getElementById("blackbox")
+  box.style.backgroundColor = "black";
+}
+    </script>
+
+</div>
+
         </center>
 
 <center>

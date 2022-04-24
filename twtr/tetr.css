@@ -1,7 +1,26 @@
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-image: url(bg2.png);
+  /* background-image: url(bg2.png); */
 }
+
+/* Big Box */
+
+.bigbox{
+  background-color: white;
+  /* height: 200px; */
+  background-image: url(bg2.png);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+
+
+
+
+
+
+
 
 
 .box{
@@ -10,19 +29,19 @@ body{
   width: 350px;
   resize: both;
   overflow: auto;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 1px 1px 100px 1px rgb(255, 0, 0);
+  background-color: rgba(0, 0, 0, 0.952);
+  border-radius: 10px;
+  
 }
 
 
 
 
 .logo{
-  height: 45px;
+  height: 35px;
   position: relative;
   float: right;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-right: 10px;
 }
 
@@ -40,7 +59,7 @@ body{
   margin-left: 20px;
   margin-top: 25px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   background-position: center;
   background-size: cover;
   display: inline-block;
@@ -58,22 +77,33 @@ body{
   margin-top: 30px;
   float: left;
   margin-left: 10px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
 
 }
 .user::placeholder{
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
 }
 
+/* Blue Tick */
+.tick{
+  position: relative;
+  margin-top: 28px;
+  float: left;
+  margin-left: -87px;
+}
+
+
+
 /* username */
 
 #username{
-  margin-left: -159px;
-  color: gray;
+  margin-left: -160px;
+  color: rgb(128, 128, 128);
+  
 }
 #username::placeholder{
   color: grey;
@@ -88,12 +118,12 @@ body{
   height: 70px;
   margin-top: -15px;  
   border-width: 0ch;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }
 .tweet::placeholder{
   font-weight: 600;
-  color: black;
+  color: rgb(255, 255, 255);
 
 }
 
@@ -116,4 +146,42 @@ body{
 .choosepicture input{
   opacity: 0;
   position: absolute;
+}
+
+
+
+
+
+/* DATE AND TIME */
+.time{
+  float: left;
+  position: relative;
+  bottom: 0%;
+  vertical-align: bottom;
+}
+
+
+
+/* EDITING */
+
+.editing{
+  height: auto;
+  background-color: whitesmoke;
+  text-align: left;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.editing img{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  
+}
+
+.editing button{
+  margin-bottom: 10px;
+  border-width: 0ch;
 }
